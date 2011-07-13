@@ -19,7 +19,7 @@ class ExampleTest(unittest.TestCase):
 
     def test_without_setup_decorator(self):
         example = Example(2, 1)
-        example .number |should| equal_to(2)
+        example.number |should| equal_to(2)
 
 
 @turbo_class
