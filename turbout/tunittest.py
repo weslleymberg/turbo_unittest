@@ -25,5 +25,3 @@ def turbo_class(class_):
         setattr(class_, test.method.__name__, test.run_test)
     all_tests = []
     return class_
-
-
