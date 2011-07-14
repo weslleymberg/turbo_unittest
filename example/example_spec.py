@@ -25,6 +25,9 @@ class ExampleTest(unittest.TestCase):
 @turbo_class
 class Example2Test(unittest.TestCase):
 
+    def setUp(self):
+        self.example_with_unittest_setup = Example2("I Have an Unittest Setup")
+
     def my_setup(self):
         self.example2 = Example2("Caubi")
 
@@ -35,3 +38,6 @@ class Example2Test(unittest.TestCase):
     def it_gets_other_name(self):
         example2 = Example2("Weslleymberg")
         example2.name |should| equal_to("Weslleymberg")
+
+    def it_has_a_unittest_setup(self):
+        self.example_with_unittest_setup.name |should| equal_to("I Have an Unittest Setup")
