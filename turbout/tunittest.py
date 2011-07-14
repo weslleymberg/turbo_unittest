@@ -1,5 +1,3 @@
-import sys
-
 all_tests = []
 
 
