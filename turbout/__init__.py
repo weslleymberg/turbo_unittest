@@ -1,1 +1,1 @@
-from tunittest import setup, turbo_class
+from tunittest import turbo_method, turbo_class
